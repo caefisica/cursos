@@ -1,0 +1,58 @@
+\documentclass[oneside]{book}
+
+% INPUT %
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{subfiles}
+\usepackage{hyperref}
+
+% STYLE %
+\usepackage{xcolor}
+\definecolor{main_background}{HTML}{6b092a}
+\usepackage{geometry}
+\hypersetup{pdfborder=0 0 0}
+\setlength\parindent{0pt}
+
+% MATH %
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{cancel}
+
+% IMAGES %
+\usepackage{graphicx}
+
+% DOCUMENT %
+\begin{document}
+
+\begin{titlepage}
+\newgeometry{left=7.5cm}
+	\scshape
+	\pagecolor{main_background}
+	\color{white}
+	\noindent
+	{\Huge Mecánica Clásica II}
+	\vskip0.2\baselineskip\noindent
+	\makebox[0pt][l]{\rule{1\textwidth}{0.5pt}}
+	\par\vskip .4cm \noindent
+	\textit{Universidad Nacional Mayor de San Marcos}
+	\vskip0.1\baselineskip\noindent
+	\textit{Facultad de Ciencias Físicas}
+	\vskip2\baselineskip
+	\noindent
+	\textsf{Fulgencio Villegas Silva}
+	\vfill\noindent
+	\textsf{Basado en “Classical Mechanics” de Herbert Goldstein}
+	\vskip0.1\baselineskip\noindent
+	\makebox[0pt][l]{\rule{1\textwidth}{0.5pt}}
+	\vskip\baselineskip\noindent
+	\textsf{Última actualización: \today}
+	\restoregeometry
+	\pagecolor{white}\color{black}
+\end{titlepage}
+
+\tableofcontents
+
+\part{Introducción}
+\chapter{Repaso de los principios fundamentales}
+\subfile{chapters/1}
+\end{document}
